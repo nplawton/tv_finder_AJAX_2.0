@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="display.css">
+    <script
+        src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+        crossorigin="anonymous">
+    </script>
+    <script defer src="display.js"></script>
+    <title>Display Test</title>
+</head>
+<body>
+    <div id="main" class="row">
+        <div id="header">
+            <h1 class="site-title">Display Test</h1>
+        </div>
+    </div>
+    <div id="user-selection">
+        <input type="text" name="search" id="search" placeholder="search">
+        <button id="submit">Search</button>
+    </div>
+    <div id="selected" class="display-holder">
+    
+    </div>
+    <div class="slide_carousel">
+        <button class="slide_button prev" id="prev">&#8656;</button>
+        <button class="slide_button next" id="next">&#8658;</button>
+        <div class="slide_container">
+            <div id="slide_track" class="slide">
+
+            </div> 
+        </div>
+    </div>
+    <div class="popup-overlay" id="overlay">
+        <div class="popup-content" id="content">
+            <button class="close" id="close">X</button>
+            <h2 id="name"></h2>
+            <p id="desc"></p>
+        </div>
+    </div>
+</body>
+</html>
